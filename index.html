@@ -17,7 +17,7 @@
       <span class="wordmark__seal" aria-hidden="true">文</span>
       <span>文学鑑定事件簿</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="目次を開く">
       <span class="menu-toggle__label">目次</span>
       <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
     </button>
@@ -46,6 +46,11 @@
           <p class="hero__catch">文体は、<br class="mobile-only">指紋になるか。</p>
           <p class="hero__intro">AIは江戸川乱歩を書けるのか。文体を数値で解剖し、AIによる再現を試みる。そこに現れるのは作家の個性か、模倣された記号か。AI時代の文芸批評を問う。</p>
           <a class="text-link hero__link" href="#case">事件のあらましを読む <span aria-hidden="true">↘</span></a>
+          <a class="hero-event-link" href="#event">
+            <span class="hero-event-link__date">2027.01.17</span>
+            <span>文学フリマ京都11に出店予定</span>
+            <span class="hero-event-link__arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
 
         <div class="hero-art" aria-label="文学鑑定事件簿、事件01 江戸川乱歩をあしらった表紙風のタイポグラフィ">
@@ -75,6 +80,10 @@
       <div class="section-body reveal">
         <p class="eyebrow">事件の概要</p>
         <h2 id="case-title">作品を測ることは、<br>作家を知ることか。</h2>
+        <div class="research-status" aria-label="研究の進捗">
+          <span class="research-status__label"><i aria-hidden="true"></i> 研究進捗</span>
+          <p>乱歩18作品の形態素解析と文体分析を実施。AI小説生成実験・読者評価は今後実施予定です。</p>
+        </div>
         <div class="case-copy">
           <p>江戸川乱歩の小説を、語彙や文の特徴から読み直す。数値に置き換えた文体は、作品ごとの違いや、作家らしさについて何を語るのでしょうか。</p>
           <p>本企画の主題は、AIに小説を書かせることだけではありません。分析と生成を手がかりに、作品を読むとはどういうことか、そして新しい技術の時代に文芸批評は何ができるのかを考えます。</p>
@@ -89,27 +98,27 @@
       <div class="section-body">
         <p class="eyebrow reveal">鑑定の方法</p>
         <h2 id="method-title" class="reveal">読み解くための、<br>四つの手がかり。</h2>
-        <p class="section-lead reveal">作品の分析から読者の評価まで。鑑定の手順をひとつずつ記録します。</p>
+        <p class="section-lead reveal">実施済みの文体分析と、これから行う生成・読者評価を分けて記録します。</p>
         <ol class="method-list">
           <li class="method-item reveal">
             <span class="method-item__number">一</span>
-            <div><h3>対象作品を読む</h3><p>江戸川乱歩の18作品を対象に、テキストを形態素解析します。</p></div>
+            <div><h3>18作品を形態素解析</h3><p>江戸川乱歩の作品を対象に、品詞構成・機能語・内容語を分析しました。</p></div>
             <span class="method-item__label">18 WORKS</span>
           </li>
           <li class="method-item reveal">
             <span class="method-item__number">二</span>
-            <div><h3>文体の輪郭を描く</h3><p>PCA・クラスター分析を用いて、作品どうしの特徴を可視化します。</p></div>
-            <span class="method-item__label">ANALYSIS</span>
+            <div><h3>作品間の特徴を可視化</h3><p>PCAによる可視化と、階層的クラスター分析を実施しました。</p></div>
+            <span class="method-item__label">実施済</span>
           </li>
           <li class="method-item reveal">
             <span class="method-item__number">三</span>
-            <div><h3>生成の条件を変える</h3><p>3つの条件でAI小説の生成実験を行い、条件による違いを確かめます。</p></div>
-            <span class="method-item__label">3 CONDITIONS</span>
+            <div><h3>条件を設定してAI小説を生成</h3><p>3つの条件による生成実験を予定しています。現時点では未実施です。</p></div>
+            <span class="method-item__label method-item__label--planned">今後実施</span>
           </li>
           <li class="method-item reveal">
             <span class="method-item__number">四</span>
-            <div><h3>数値と読者の目で評価する</h3><p>計量的な評価と読者による評価を照らし合わせ、文体の再現を考察します。</p></div>
-            <span class="method-item__label">TWO PERSPECTIVES</span>
+            <div><h3>計量評価と読者評価を照合</h3><p>生成作品の計量的な評価と読者による評価を、今後実施する予定です。</p></div>
+            <span class="method-item__label method-item__label--planned">今後実施</span>
           </li>
         </ol>
       </div>
@@ -125,11 +134,17 @@
         <div class="archive-card__body">
           <h2 id="archives-title">資料は、<br>まだ封印中。</h2>
           <div>
-            <p>分析グラフ、研究成果、鑑定記録。調査の進行にあわせて、資料をこの部屋に追加していきます。</p>
-            <span class="status-label"><i aria-hidden="true"></i> 資料を順次公開予定</span>
+            <p>実施した分析の記録を、内容の確認と整理ができ次第公開します。</p>
+            <ul class="archive-list" aria-label="今後公開する研究資料">
+              <li>品詞構成の分析</li>
+              <li>機能語 unigram の主成分分析</li>
+              <li>内容語 unigram の主成分分析</li>
+              <li>機能語・内容語のクラスター分析</li>
+            </ul>
+            <span class="status-label"><i aria-hidden="true"></i> 研究資料を順次公開予定</span>
           </div>
         </div>
-        <div class="archive-card__foot"><span>未公開資料</span><span>STATUS: IN PROGRESS</span></div>
+        <div class="archive-card__foot"><span>分析資料・解説</span><span>公開準備中</span></div>
       </div>
     </section>
 
@@ -138,40 +153,48 @@
       <div class="section-body">
         <p class="eyebrow reveal">AI生成作品展示室</p>
         <h2 id="works-title" class="reveal">三つの気配。<br>まだ、空白。</h2>
-        <p class="section-lead reveal">実験から生まれた作品は、準備が整い次第ここに展示します。</p>
-        <div class="genre-grid">
-          <article class="genre-card reveal">
-            <span class="genre-card__number">01</span><span class="genre-card__ornament" aria-hidden="true">謎</span>
+        <p class="section-lead reveal">内容語の計量分析を参考に設定した、生成実験用の3つの場面です。AIによる小説生成実験は今後実施予定です。</p>
+        <div class="genre-grid" aria-label="生成実験のカテゴリー">
+          <article class="genre-card reveal" data-category="A">
+            <span class="genre-card__number">A</span><span class="genre-card__ornament" aria-hidden="true">謎</span>
             <h3>事件・推理型</h3><p>作品準備中</p>
           </article>
-          <article class="genre-card reveal">
-            <span class="genre-card__number">02</span><span class="genre-card__ornament" aria-hidden="true">幻</span>
+          <article class="genre-card reveal" data-category="B">
+            <span class="genre-card__number">B</span><span class="genre-card__ornament" aria-hidden="true">幻</span>
             <h3>怪奇・幻想型</h3><p>作品準備中</p>
           </article>
-          <article class="genre-card reveal">
-            <span class="genre-card__number">03</span><span class="genre-card__ornament" aria-hidden="true">影</span>
+          <article class="genre-card reveal" data-category="C">
+            <span class="genre-card__number">C</span><span class="genre-card__ornament" aria-hidden="true">影</span>
             <h3>心理・不安型</h3><p>作品準備中</p>
           </article>
         </div>
-        <p class="works-note">生成作品の全文は、公開準備ができ次第掲載します。</p>
+        <p class="works-note">生成作品は実験後にカテゴリー別に公開予定です。現時点で公開できる作品本文はありません。</p>
       </div>
     </section>
 
     <section class="publication-section" id="publication" aria-labelledby="publication-title">
       <div class="publication-inner reveal">
-        <div class="publication-cover" aria-hidden="true">
-          <span class="publication-cover__top">文芸批評冊子 / 01</span>
-          <span class="publication-cover__vertical">江戸川乱歩 文体鑑定記録</span>
-          <span class="publication-cover__title">文学鑑定<br>事件簿</span>
-          <span class="publication-cover__case">CASE FILE 01</span>
-          <span class="publication-cover__bottom">文体は、指紋になるか。</span>
-        </div>
+        <!-- 表紙写真の公開後は、下の仮ビジュアルを publication-cover-image クラスの画像に差し替えます。 -->
+        <figure class="publication-visual">
+          <div class="publication-cover" aria-hidden="true">
+            <span class="publication-cover__top">文芸批評冊子 / 01</span>
+            <span class="publication-cover__vertical">江戸川乱歩 文体鑑定記録</span>
+            <span class="publication-cover__title">文学鑑定<br>事件簿</span>
+            <span class="publication-cover__case">CASE FILE 01</span>
+            <span class="publication-cover__bottom">文体は、指紋になるか。</span>
+          </div>
+          <figcaption>刊行予告ビジュアル — 装幀準備中</figcaption>
+        </figure>
         <div class="publication-copy">
           <p class="eyebrow">刊行案内</p>
           <h2 id="publication-title">文学鑑定事件簿 <span>01</span></h2>
-          <p class="publication-copy__description">江戸川乱歩の文体をめぐる分析と、AI生成実験の記録をまとめた文芸批評冊子を制作しています。</p>
-          <p class="publication-copy__status"><span class="status-label"><i aria-hidden="true"></i> 現在制作中</span></p>
-          <p class="publication-copy__small">内容・頒布情報は、決まり次第お知らせします。</p>
+          <p class="publication-copy__description">江戸川乱歩・AI・新時代の文芸批評をテーマにした冊子を制作しています。</p>
+          <dl class="publication-details">
+            <div><dt>制作状況</dt><dd><span class="status-label"><i aria-hidden="true"></i> 制作中</span></dd></div>
+            <div><dt>頒布予定</dt><dd>文学フリマ京都11</dd></div>
+            <div><dt>表紙画像</dt><dd>後日追加</dd></div>
+            <div><dt>価格・ページ数・目次</dt><dd>決定後に追加</dd></div>
+          </dl>
         </div>
       </div>
     </section>
