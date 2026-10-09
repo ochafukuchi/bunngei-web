@@ -97,30 +97,117 @@
       <div class="section-index reveal"><span>02</span><span>THE METHOD</span></div>
       <div class="section-body">
         <p class="eyebrow reveal">鑑定の方法</p>
-        <h2 id="method-title" class="reveal">読み解くための、<br>四つの手がかり。</h2>
-        <p class="section-lead reveal">実施済みの文体分析と、これから行う生成・読者評価を分けて記録します。</p>
-        <ol class="method-list">
-          <li class="method-item reveal">
-            <span class="method-item__number">一</span>
-            <div><h3>18作品を形態素解析</h3><p>江戸川乱歩の作品を対象に、品詞構成・機能語・内容語を分析しました。</p></div>
-            <span class="method-item__label">18 WORKS</span>
-          </li>
-          <li class="method-item reveal">
-            <span class="method-item__number">二</span>
-            <div><h3>作品間の特徴を可視化</h3><p>PCAによる可視化と、階層的クラスター分析を実施しました。</p></div>
-            <span class="method-item__label">実施済</span>
-          </li>
-          <li class="method-item reveal">
-            <span class="method-item__number">三</span>
-            <div><h3>条件を設定してAI小説を生成</h3><p>3つの条件による生成実験を予定しています。現時点では未実施です。</p></div>
-            <span class="method-item__label method-item__label--planned">今後実施</span>
-          </li>
-          <li class="method-item reveal">
-            <span class="method-item__number">四</span>
-            <div><h3>計量評価と読者評価を照合</h3><p>生成作品の計量的な評価と読者による評価を、今後実施する予定です。</p></div>
-            <span class="method-item__label method-item__label--planned">今後実施</span>
-          </li>
-        </ol>
+        <h2 id="method-title" class="method-title reveal">文学を「読む」。<br>「つくる」。<br>「問いなおす」。</h2>
+        <div class="method-introduction reveal">
+          <p class="method-introduction__lead">「乱歩らしさ」は、どこに宿るのか。</p>
+          <p>実際の作品から言葉の特徴を探り、その手がかりをAIに与え、生まれた文章をもう一度読み解く。</p>
+          <p>数字と人間の感覚を行き来しながら、文学の新しい読み方を探ります。</p>
+        </div>
+
+        <div class="method-chapters">
+          <section class="method-chapter reveal" aria-labelledby="method-reading">
+            <header class="method-chapter__heading">
+              <p class="method-chapter__eyebrow">CHAPTER 01 <span>/ READING</span></p>
+              <h3 id="method-reading">第一章　文学を「読む」。</h3>
+            </header>
+            <ol class="method-list">
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">01</span>
+                <div class="method-item__content">
+                  <h4>乱歩の言葉の癖を探る</h4>
+                  <div class="method-item__copy">
+                    <p>江戸川乱歩の18作品を、使われている言葉やその頻度から数量的に調べます。</p>
+                    <p>どんな言葉が多いのか。作品同士はどこが似ていて、どこが違うのか。</p>
+                    <p>普段の読書では気づきにくい文章の特徴を、数字から探ります。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">02</span>
+                <div class="method-item__content">
+                  <h4>ほかの作家と読み比べる</h4>
+                  <div class="method-item__copy">
+                    <p>乱歩に見られる特徴は、本当に乱歩だけのものなのでしょうか。</p>
+                    <p>同じ時代のほかの作家4人・約18作品とも比較し、当時の文学に広く見られる言葉遣いと、乱歩に目立つ特徴を見分けていきます。</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="method-chapter reveal" aria-labelledby="method-creating">
+            <header class="method-chapter__heading">
+              <p class="method-chapter__eyebrow">CHAPTER 02 <span>/ GENERATION</span></p>
+              <h3 id="method-creating">第二章　文学を「つくる」。</h3>
+            </header>
+            <ol class="method-list" start="3">
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">03</span>
+                <div class="method-item__content">
+                  <h4>AIに与えるヒントを変える</h4>
+                  <div class="method-item__copy">
+                    <p>AIに同じ場面を提示し、異なる3種類の情報を与えます。</p>
+                    <p>一つ目は、時代とジャンルだけ。</p>
+                    <p>二つ目は、「江戸川乱歩の作風」という作者名の情報。</p>
+                    <p>三つ目は、作者名を伏せ、実際の分析から得た文章の特徴だけ。</p>
+                    <p>与える情報によって、物語や文章がどう変わるのかを探ります。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">04</span>
+                <div class="method-item__content">
+                  <h4>AIに物語を書かせる</h4>
+                  <div class="method-item__copy">
+                    <p>同じ出発点から、AIはどのような物語を生み出すのでしょうか。</p>
+                    <p>複数の場面で小説を生成し、その展開や表現を読みます。</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="method-chapter reveal" aria-labelledby="method-questioning">
+            <header class="method-chapter__heading">
+              <p class="method-chapter__eyebrow">CHAPTER 03 <span>/ READING AGAIN</span></p>
+              <h3 id="method-questioning">第三章　文学を「問いなおす」。</h3>
+            </header>
+            <ol class="method-list" start="5">
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">05</span>
+                <div class="method-item__content">
+                  <h4>本物とAIの文章を照らし合わせる</h4>
+                  <div class="method-item__copy">
+                    <p>AIが書いた小説を、実際の乱歩作品と同じ方法で分析します。</p>
+                    <p>言葉の使い方はどれくらい似ているのか。ほかの作家と比べても乱歩に近いと言えるのか。</p>
+                    <p>数字による比較と実際の文章の読み比べから、その類似性を確かめます。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">06</span>
+                <div class="method-item__content">
+                  <h4>読者が感じる「らしさ」を確かめる</h4>
+                  <div class="method-item__copy">
+                    <p>作品の出典や生成条件を伏せた状態で、読者にも文章を読んでもらいます。</p>
+                    <p>どの文章を乱歩らしく感じるのか。そして、それはなぜなのか。</p>
+                    <p>数字が示す近さと、人間が感じる近さは一致するのでしょうか。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="method-item">
+                <span class="method-item__number" aria-hidden="true">07</span>
+                <div class="method-item__content">
+                  <h4>その違いから、文芸批評を考える</h4>
+                  <div class="method-item__copy">
+                    <p>AIが再現できたものは何だったのか。反対に、数字や生成実験では捉えきれなかったものは何なのか。</p>
+                    <p>分析結果と読者の感覚を手がかりに、作家の個性、模倣、そしてAI時代における文芸批評の可能性を考えます。</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div>
       </div>
     </section>
 
