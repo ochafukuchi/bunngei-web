@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="文学鑑定事件簿の研究資料を、カテゴリーごとに整理して公開する捜査資料室です。">
+  <title>捜査資料室 — 文学鑑定事件簿</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+<body class="interior-page archive-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="wordmark" href="../" aria-label="文学鑑定事件簿 — トップへ">
+      <span class="wordmark__seal" aria-hidden="true">文</span><span>文学鑑定事件簿</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="目次を開く">
+      <span class="menu-toggle__label">目次</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+      <a href="../#case">事件の概要</a>
+      <a href="../#method">鑑定の方法</a>
+      <a href="./" aria-current="page">捜査資料室</a>
+      <a href="../works/">AI作品展示室</a>
+      <a href="../#publication">刊行案内</a>
+      <a href="../#event">出店情報</a>
+      <a href="../#journal">捜査日誌</a>
+    </nav>
+  </header>
+
+  <main id="main" class="interior-main">
+    <header class="interior-heading reveal">
+      <p class="interior-heading__eyebrow">RESEARCH ARCHIVE</p>
+      <h1>捜査資料室</h1>
+      <p class="interior-heading__description">江戸川乱歩の作品をめぐる分析資料を、主題ごとに整理して収蔵します。</p>
+    </header>
+
+    <section class="archive-shelf reveal" aria-labelledby="archive-shelf-title">
+      <div class="archive-shelf__heading">
+        <div>
+          <p class="eyebrow">CATALOGUE</p>
+          <h2 id="archive-shelf-title">収蔵資料</h2>
+        </div>
+        <span class="catalogue-count" id="archive-total">0 件</span>
+      </div>
+      <div class="archive-categories archive-filters" id="archive-filters" role="group" aria-label="資料をカテゴリーで絞り込む">
+        <button type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button type="button" data-filter="language" aria-pressed="false">品詞・語彙分析</button>
+        <button type="button" data-filter="function" aria-pressed="false">機能語の分析</button>
+        <button type="button" data-filter="content" aria-pressed="false">内容語の分析</button>
+        <button type="button" data-filter="mapping" aria-pressed="false">主成分分析・クラスター分析</button>
+        <button type="button" data-filter="ai" aria-pressed="false">AI生成作品との比較</button>
+        <button type="button" data-filter="other" aria-pressed="false">その他の研究資料</button>
+      </div>
+      <p class="catalogue-empty" id="archive-empty" hidden>該当する資料はありません。</p>
+      <div class="archive-catalogue" id="archive-catalogue" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark wordmark--footer" href="../"><span class="wordmark__seal" aria-hidden="true">文</span><span>文学鑑定事件簿</span></a>
+    <p>研究資料を読む。</p>
+    <a class="back-to-top" href="../">トップページへ <span aria-hidden="true">↗</span></a>
+    <small>© 文学鑑定事件簿</small>
+  </footer>
+</body>
+</html>

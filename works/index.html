@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="文学鑑定事件簿のAI小説生成実験から生まれた作品を、場面カテゴリーごとに展示する作品目録です。">
+  <title>AI作品展示室 — 文学鑑定事件簿</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+<body class="interior-page works-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="wordmark" href="../" aria-label="文学鑑定事件簿 — トップへ">
+      <span class="wordmark__seal" aria-hidden="true">文</span><span>文学鑑定事件簿</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="目次を開く">
+      <span class="menu-toggle__label">目次</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+      <a href="../#case">事件の概要</a>
+      <a href="../#method">鑑定の方法</a>
+      <a href="../archives/">捜査資料室</a>
+      <a href="./" aria-current="page">AI作品展示室</a>
+      <a href="../#publication">刊行案内</a>
+      <a href="../#event">出店情報</a>
+      <a href="../#journal">捜査日誌</a>
+    </nav>
+  </header>
+
+  <main id="main" class="interior-main">
+    <header class="interior-heading interior-heading--works reveal">
+      <p class="interior-heading__eyebrow">GENERATED WORKS</p>
+      <h1>AI作品展示室</h1>
+      <p class="interior-heading__description">内容語の分析を手がかりに設定した三つの場面から生まれる小説を、作品目録と本文で紹介します。</p>
+    </header>
+
+    <nav class="work-categories reveal" aria-label="作品カテゴリー">
+      <a href="#works-a"><span>A</span>事件・推理型</a>
+      <a href="#works-b"><span>B</span>怪奇・幻想型</a>
+      <a href="#works-c"><span>C</span>心理・不安型</a>
+    </nav>
+
+    <div class="work-catalogue" id="work-catalogue">
+      <section class="work-category reveal" id="works-a" data-work-category="A" aria-labelledby="works-a-title">
+        <header class="work-category__heading">
+          <span class="work-category__letter">A</span>
+          <div><p>SCENE A</p><h2 id="works-a-title">事件・推理型</h2></div>
+          <span class="catalogue-count" data-work-count="A">0 篇</span>
+        </header>
+        <div class="work-list" data-work-list="A" aria-live="polite"></div>
+      </section>
+      <section class="work-category reveal" id="works-b" data-work-category="B" aria-labelledby="works-b-title">
+        <header class="work-category__heading">
+          <span class="work-category__letter">B</span>
+          <div><p>SCENE B</p><h2 id="works-b-title">怪奇・幻想型</h2></div>
+          <span class="catalogue-count" data-work-count="B">0 篇</span>
+        </header>
+        <div class="work-list" data-work-list="B" aria-live="polite"></div>
+      </section>
+      <section class="work-category reveal" id="works-c" data-work-category="C" aria-labelledby="works-c-title">
+        <header class="work-category__heading">
+          <span class="work-category__letter">C</span>
+          <div><p>SCENE C</p><h2 id="works-c-title">心理・不安型</h2></div>
+          <span class="catalogue-count" data-work-count="C">0 篇</span>
+        </header>
+        <div class="work-list" data-work-list="C" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark wordmark--footer" href="../"><span class="wordmark__seal" aria-hidden="true">文</span><span>文学鑑定事件簿</span></a>
+    <p>生成された物語を読む。</p>
+    <a class="back-to-top" href="../">トップページへ <span aria-hidden="true">↗</span></a>
+    <small>© 文学鑑定事件簿</small>
+  </footer>
+</body>
+</html>

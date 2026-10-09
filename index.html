@@ -7,6 +7,7 @@
   <meta name="description" content="江戸川乱歩の作品を計量分析し、AIによる文学作品の生成実験を通じて、新時代の文芸批評の可能性を探る研究・創作企画。">
   <title>文学鑑定事件簿 — 文体は、指紋になるか。</title>
   <link rel="stylesheet" href="style.css">
+  <script src="journal-data.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -24,8 +25,8 @@
     <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
       <a href="#case">事件の概要</a>
       <a href="#method">鑑定の方法</a>
-      <a href="#archives">捜査資料室</a>
-      <a href="#works">作品展示室</a>
+      <a href="archives/">捜査資料室</a>
+      <a href="works/">AI作品展示室</a>
       <a href="#publication">刊行案内</a>
       <a href="#event">出店情報</a>
       <a href="#journal">捜査日誌</a>
@@ -56,7 +57,7 @@
         <div class="hero-art" aria-label="文学鑑定事件簿、事件01 江戸川乱歩をあしらった表紙風のタイポグラフィ">
           <div class="hero-art__top">
             <span>THE LITERARY<br>CASE FILES</span>
-            <span>創刊準備号<br>二〇二七</span>
+            <span>文芸批評誌<br>二〇二七</span>
           </div>
           <div class="hero-art__center">
             <span class="hero-art__vertical">文体鑑定記録</span>
@@ -80,10 +81,6 @@
       <div class="section-body reveal">
         <p class="eyebrow">事件の概要</p>
         <h2 id="case-title">作品を測ることは、<br>作家を知ることか。</h2>
-        <div class="research-status" aria-label="研究の進捗">
-          <span class="research-status__label"><i aria-hidden="true"></i> 研究進捗</span>
-          <p>乱歩18作品の形態素解析と文体分析を実施。AI小説生成実験・読者評価は今後実施予定です。</p>
-        </div>
         <div class="case-copy">
           <p>江戸川乱歩の小説を、語彙や文の特徴から読み直す。数値に置き換えた文体は、作品ごとの違いや、作家らしさについて何を語るのでしょうか。</p>
           <p>本企画の主題は、AIに小説を書かせることだけではありません。分析と生成を手がかりに、作品を読むとはどういうことか、そして新しい技術の時代に文芸批評は何ができるのかを考えます。</p>
@@ -211,57 +208,28 @@
       </div>
     </section>
 
-    <section class="section archive-section" id="archives" aria-labelledby="archives-title">
-      <div class="section-index reveal"><span>03</span><span>EVIDENCE</span></div>
-      <div class="archive-card reveal">
-        <div class="archive-card__heading">
-          <p class="eyebrow">捜査資料室</p>
-          <span class="archive-card__file">FILE&nbsp; 001 — ∞</span>
-        </div>
-        <div class="archive-card__body">
-          <h2 id="archives-title">資料は、<br>まだ封印中。</h2>
-          <div>
-            <p>実施した分析の記録を、内容の確認と整理ができ次第公開します。</p>
-            <ul class="archive-list" aria-label="今後公開する研究資料">
-              <li>品詞構成の分析</li>
-              <li>機能語 unigram の主成分分析</li>
-              <li>内容語 unigram の主成分分析</li>
-              <li>機能語・内容語のクラスター分析</li>
-            </ul>
-            <span class="status-label"><i aria-hidden="true"></i> 研究資料を順次公開予定</span>
-          </div>
-        </div>
-        <div class="archive-card__foot"><span>分析資料・解説</span><span>公開準備中</span></div>
+    <section class="section directory-section archive-section" id="archives" aria-labelledby="archives-title">
+      <div class="section-index reveal"><span>03</span><span>RESEARCH ARCHIVE</span></div>
+      <div class="directory-card reveal">
+        <p class="eyebrow">捜査資料室</p>
+        <h2 id="archives-title">言葉の痕跡を、<br>資料として読む。</h2>
+        <p>作品の言葉をめぐる分析や研究資料を、主題ごとに整理して紹介します。</p>
+        <a class="text-link" href="archives/">捜査資料室をひらく <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="section works-section" id="works" aria-labelledby="works-title">
-      <div class="section-index reveal"><span>04</span><span>GENERATED FICTION</span></div>
-      <div class="section-body">
-        <p class="eyebrow reveal">AI生成作品展示室</p>
-        <h2 id="works-title" class="reveal">三つの気配。<br>まだ、空白。</h2>
-        <p class="section-lead reveal">内容語の計量分析を参考に設定した、生成実験用の3つの場面です。AIによる小説生成実験は今後実施予定です。</p>
-        <div class="genre-grid" aria-label="生成実験のカテゴリー">
-          <article class="genre-card reveal" data-category="A">
-            <span class="genre-card__number">A</span><span class="genre-card__ornament" aria-hidden="true">謎</span>
-            <h3>事件・推理型</h3><p>作品準備中</p>
-          </article>
-          <article class="genre-card reveal" data-category="B">
-            <span class="genre-card__number">B</span><span class="genre-card__ornament" aria-hidden="true">幻</span>
-            <h3>怪奇・幻想型</h3><p>作品準備中</p>
-          </article>
-          <article class="genre-card reveal" data-category="C">
-            <span class="genre-card__number">C</span><span class="genre-card__ornament" aria-hidden="true">影</span>
-            <h3>心理・不安型</h3><p>作品準備中</p>
-          </article>
-        </div>
-        <p class="works-note">生成作品は実験後にカテゴリー別に公開予定です。現時点で公開できる作品本文はありません。</p>
+    <section class="section directory-section works-section" id="works" aria-labelledby="works-title">
+      <div class="section-index reveal"><span>04</span><span>GENERATED WORKS</span></div>
+      <div class="directory-card reveal">
+        <p class="eyebrow">AI作品展示室</p>
+        <h2 id="works-title">AI小説の実験から、<br>読むことを考える。</h2>
+        <p>三つの場面カテゴリーで行う生成実験と、作品の目録・本文を紹介します。</p>
+        <a class="text-link" href="works/">AI作品展示室をひらく <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
     <section class="publication-section" id="publication" aria-labelledby="publication-title">
       <div class="publication-inner reveal">
-        <!-- 表紙写真の公開後は、下の仮ビジュアルを publication-cover-image クラスの画像に差し替えます。 -->
         <figure class="publication-visual">
           <div class="publication-cover" aria-hidden="true">
             <span class="publication-cover__top">文芸批評冊子 / 01</span>
@@ -270,17 +238,15 @@
             <span class="publication-cover__case">CASE FILE 01</span>
             <span class="publication-cover__bottom">文体は、指紋になるか。</span>
           </div>
-          <figcaption>刊行予告ビジュアル — 装幀準備中</figcaption>
+          <figcaption>本サイトのための装飾図案</figcaption>
         </figure>
         <div class="publication-copy">
           <p class="eyebrow">刊行案内</p>
           <h2 id="publication-title">文学鑑定事件簿 <span>01</span></h2>
-          <p class="publication-copy__description">江戸川乱歩・AI・新時代の文芸批評をテーマにした冊子を制作しています。</p>
+          <p class="publication-copy__description">江戸川乱歩・AI・新時代の文芸批評をテーマにした文芸批評冊子です。</p>
           <dl class="publication-details">
-            <div><dt>制作状況</dt><dd><span class="status-label"><i aria-hidden="true"></i> 制作中</span></dd></div>
-            <div><dt>頒布予定</dt><dd>文学フリマ京都11</dd></div>
-            <div><dt>表紙画像</dt><dd>後日追加</dd></div>
-            <div><dt>価格・ページ数・目次</dt><dd>決定後に追加</dd></div>
+            <div><dt>テーマ</dt><dd>江戸川乱歩・AI・新時代の文芸批評</dd></div>
+            <div><dt>頒布イベント</dt><dd>文学フリマ京都11</dd></div>
           </dl>
         </div>
       </div>
@@ -300,7 +266,6 @@
           <div><dt>開催時間</dt><dd>12:00〜17:00</dd></div>
           <div><dt>会場</dt><dd>京都市勧業館「みやこめっせ」</dd></div>
           <div><dt>出店名</dt><dd>文学鑑定事件簿</dd></div>
-          <div><dt>ブース番号</dt><dd class="event-details__pending">未定</dd></div>
         </dl>
         <span class="event-panel__seal" aria-hidden="true">京<br>都</span>
       </div>
@@ -312,13 +277,9 @@
         <p class="eyebrow reveal">捜査日誌</p>
         <div class="journal-heading reveal">
           <h2 id="journal-title">調査の途中も、<br>記録していく。</h2>
-          <p>研究や制作の過程を、noteでお知らせする予定です。</p>
+          <p>研究資料とは別に、研究や制作の経過を時系列で記録します。</p>
         </div>
-        <div class="journal-placeholder reveal">
-          <span class="journal-placeholder__date">COMING SOON</span>
-          <p>最初の捜査日誌を準備しています。</p>
-          <span class="journal-placeholder__note">記事の公開後、こちらにリンクを追加します。</span>
-        </div>
+        <ol class="journal-list" id="journal-list" aria-label="捜査日誌の記事一覧"></ol>
       </div>
     </section>
   </main>
